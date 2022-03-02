@@ -3,7 +3,7 @@ from pickle import TRUE
 
 class director:
     """
-    The direcor that enables the start, end, and turn order of Hilo.
+    The director that enables the start, end, and turn order of Hilo.
     attributes
         self.deck - a deck of cards
         self.points - an integer point value
