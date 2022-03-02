@@ -5,9 +5,10 @@ class Deck:
         self.discard - all pulled cards
         self.topcard - the most recently pulled card
     methods
-        self.pull - choose a random card from unpulled card, 
+        pull() - choose a random card from unpulled card, 
                     make self.topcard = that card, remove it from unpulled 
                     and add it to discard
+        compare_cards() - pull a new card and compare the value of the old card to the value of the new card
     """
     def __init__(self):
         pass
@@ -15,11 +16,8 @@ class Deck:
     def pull(self):
         pass
 
-def main():
-    pass
-
-if __name__ == "__main__":
-    main()
+    def compare_cards(self):
+        pass
 
 class Card:
     """
@@ -38,3 +36,9 @@ class Card:
 
     def is_higher(self, card):
         pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()

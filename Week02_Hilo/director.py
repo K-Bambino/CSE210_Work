@@ -1,5 +1,3 @@
-from pickle import TRUE
-
 
 class director:
     """
@@ -9,17 +7,21 @@ class director:
         self.points - an integer point value
         self.keep_playing - a boolean term representing whether or not to host another turn
     methods
-        self.start_game
-        self.host_turn
-        self.draw_game_board
-        self.ask_player
-        self.compare_cards
-        self.should_continue_game
+        __init__() - initialize instance
+        run() - run game loop
+        draw_game() - print game board each turn
+        get_choice() - get and validate input from user
     """
     def __init__(self):
         self.deck = ""
         self.points = ""
-        self.keep_playing = TRUE
+        self.keep_playing = True
 
-    def start_game(self):
+    def run(self):
+        pass
+
+    def draw_game(self):
+        pass
+
+    def get_choice(self):
         pass
