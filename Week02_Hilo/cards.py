@@ -1,3 +1,6 @@
+import numbers
+
+
 class Deck:
     """
     A collection of 52 cards with an unpulled deck and a discard pile.
@@ -10,7 +13,14 @@ class Deck:
                     and add it to discard
         compare_cards() - pull a new card and compare the value of the old card to the value of the new card
     """
-    def __init__(self):
+    def __init__():
+        deck = []
+        numbers = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+        suits = ["Spades","Clubs","Diamonds","Hearts"]
+        for number in numbers:
+            for suit in suits:
+                deck.append(f'{number} of {suit}')
+        print(deck)
         pass
     
     def pull(self):
@@ -38,6 +48,7 @@ class Card:
         pass
 
 def main():
+    Deck.__init__()
     pass
 
 if __name__ == "__main__":

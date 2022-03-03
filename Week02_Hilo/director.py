@@ -1,7 +1,8 @@
+import cards.py
 
 class director:
     """
-    The director that enables the start, end, and turn order of Hilo.
+    The direcor that enables the start, end, and turn order of Hilo.
     attributes
         self.deck - a deck of cards
         self.points - an integer point value
@@ -18,10 +19,22 @@ class director:
         self.game_mode = True
 
     def run(self):
+        while self.game_mode != quit:
+            director.draw_scoreboard(self,score,turn)
+            director.get_choice(self)
         pass
 
-    def draw_game(self):
+    def draw_scoreboard(self,score,turn):
+        print(f'-----HiLo-----')
+        print(f'score     turn')
+        print(f'{score:5}{turn:9}')
+        print(f'--------------')
         pass
+
+
 
     def get_choice(self):
         pass
+
+
+director.draw_scoreboard(0,150,3)
