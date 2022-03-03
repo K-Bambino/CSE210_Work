@@ -14,8 +14,8 @@ class director:
     """
     def __init__(self):
         self.deck = ""
-        self.points = ""
-        self.keep_playing = True
+        self.score = ""
+        self.game_mode = True
 
     def run(self):
         pass
