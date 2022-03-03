@@ -13,3 +13,9 @@ Required software:
 cards.py
 director.py
 Hilo.py
+
+Creators:
+Kevin Saunders
+Ben Davis
+Ian Ashby
+Nathan Weber
