@@ -32,13 +32,12 @@ class Deck:
             self.discard = []
         
 
-    def compare_cards(self,gamemode):
-        #takes the gamemode from player input being either higher('h') or lower('l') and returns the score for wether the player was right or not
+    def compare_cards(self,game_mode):
         old_card = self.top_card
         self.pull()
-        if self.top_card>old_card and gamemode=='h':
+        if self.top_card>old_card and game_mode=='h':
             return 100
-        elif self.top_card<old_card and gamemode=='l':
+        elif self.top_card<old_card and game_mode=='l':
             return 100
         else:
             return -70
@@ -48,7 +47,7 @@ class Deck:
 
 class Card:
     """
-    A single card with a suit and a deck.
+    A single card with a suit and a number.
     attributes:
         self.suit
         self.number
@@ -63,10 +62,10 @@ class Card:
 
     def __gt__(self, other_card):
         return self.number>other_card.number
-        pass
+        
     def __str__(self):
         if self.number != 1 and self.number<11:
-            number = str(self.number)
+            number = self.number
         elif self.number ==1:
             number = "Ace(1)"
         elif self.number == 11:
