@@ -20,7 +20,7 @@ class Director:
         self.turn = 0
 
     def run(self):
-    
+        print("Welcome to HiLo! The game is very simple, just look at the card and guess if the next one will be higher or lower by inputting an 'h' or an 'l'.\nSee how many you can guess right!")
         self.deck.pull()
         while self.game_mode != "q":
             self.turn += 1
@@ -42,8 +42,9 @@ class Director:
         print(f'score     turn')
         print(f'{self.score:5}{self.turn:9}')
         print(f'--------------')
-        print(f'Card: {self.deck.top_card}')
-        print()
+        if self.game_mode !='q':
+            print(f'Card: {self.deck.top_card}')
+            print()
 
 
     def get_choice(self):

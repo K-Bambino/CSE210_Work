@@ -21,7 +21,7 @@ class Deck:
         for number in numbers:
             for suit in suits:
                self.unpulled.append(Card(suit,number))
-        print(self.unpulled[number])
+        
         
 
     def pull(self):
@@ -65,7 +65,20 @@ class Card:
         return self.number>other_card.number
         pass
     def __str__(self):
-        return f'{self.number} of {self.suit}'
+        if self.number != 1 and self.number<11:
+            number = str(self.number)
+        elif self.number ==1:
+            number = "Ace(1)"
+        elif self.number == 11:
+            number = "Jack(11)"
+        elif self.number ==12:
+            number = "Queen(12)"
+        elif self.number ==13:
+            number = "King(13)"
+        else:
+            number = "err"
+        return f'{number} of {self.suit}'
+        
 
 def main():
     Deck.__init__()
