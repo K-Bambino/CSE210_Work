@@ -40,7 +40,7 @@ class Deck:
         elif self.top_card<old_card and game_mode=='l':
             return 100
         else:
-            return -70
+            return -75
 
 
         
